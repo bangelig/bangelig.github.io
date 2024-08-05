@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Background hitam untuk kontras */
+    color: #fff; /* Teks putih agar terlihat jelas di background hitam */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #00ff00; /* Garis border hijau neon */
+    border-radius: 8px;
+    background-color: #111; /* Background abu-abu gelap di dalam container */
+    animation: blink 1s infinite; /* Efek blink-blink */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00ff00; /* Warna hijau neon */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: blink 1s infinite; /* Efek blink-blink pada tombol */
+}
+
+button:disabled {
+    background-color: #6c757d; /* Warna tombol dinonaktifkan */
+    cursor: not-allowed;
+}
+
+h1 {
+    color: #00ff00; /* Warna teks hijau neon */
+    animation: blink 1s infinite; /* Efek blink-blink pada judul */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000; /* Warna merah untuk pesan */
+}
+
+#note {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #00ff00; /* Warna hijau neon */
+}
+
+/* Efek blink-blink */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
